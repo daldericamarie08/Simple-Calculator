@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicons -->
+  <link href="assets/images/favicon.png" rel="icon">
+
+  <title>Dalde Simple Calculator</title>
+</head>
+<body>
+
+  <div class="calculator">
+    <h2>Simple Calculator</h2>
+
+    <label for="firstNumber">Enter the first number:</label>
+    <input type="text" id="firstNumber" placeholder="Enter first number">
+
+    <label for="secondNumber">Enter the second number:</label>
+    <input type="text" id="secondNumber" placeholder="Enter second number">
+
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="clearResults()">Clear</button>
+
+    <div id="resultsContainer">
+      <div id="results" class="hidden">
+        <h3>Results:</h3>
+        <p id="sum">Sum: </p>
+        <p id="difference">Difference: </p>
+        <p id="product">Product: </p>
+        <p id="quotient">Quotient: </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
